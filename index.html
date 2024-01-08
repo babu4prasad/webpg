@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('pexels-karolina-grabowska-4022090.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            box-sizing: border-box;
+            background-image: url('pexels-karolina-grabowska-4022090.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            min-height: 10vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #000000;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1em;
+            margin-top: 10rem;
+        }
+
+        article {
+            position: relative;
+            flex: 0 0 237px;
+            height: 140px;
+            margin: 0.5em;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Clear the float after the third article */
+        article:nth-child(3n + 1) {
+            clear: left;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.7); /* Adjust the opacity here */
+            padding: 0.5em;
+        }
+
+        .container1 {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1em;
+            margin-top: 0.5rem;
+        }
+
+        article {
+            position: relative;
+            flex: 0 0 237px;
+            height: 140px;
+            margin: 0.5em;
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Clear the float after the third article */
+        article:nth-child(3n + 1) {
+            clear: left;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0); /* Adjust the opacity here */
+            padding: 0.5em;
+        }
+
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 0.0rem;
+            margin-top: auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            article {
+                flex: 0 0 calc(100% - 1em);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME!</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <article style="background-image: url('section1.jpg');">
+            <h2>Section 1</h2>
+            <p>Your content goes here.</p>
+            <div class="overlay">Text below Section 1</div>
+        </article>
+
+        <article style="background-image: url('section2.jpg');">
+            <h2>Section 2</h2>
+            <p>Your content goes here.</p>
+            <div class="overlay">Text below Section 2</div>
+        </article>
+
+        <article style="background-image: url('section3.jpg');">
+            <h2>Section 3</h2>
+            <p>Your content goes here.</p>
+            <div class="overlay">Text below Section 3</div>
+        </article>
+    </div>
+
+    <div class="container1">
+        <article style="background-image: url('section4.jpg');">
+            <h2>Section 4</h2>
+            <p>Your content goes here.</p>
+            <div class="overlay">Text below Section 4</div>
+        </article>
+
+        <article style="background-image: url('section5.jpg');">
+            <h2>Section 5</h2>
+            <p>Your content goes here.</p>
+            <div class="overlay">Text below Section 5</div>
+        </article>
+
+        <article style="background-image: url('section6.jpg');">
+            <h2>Section 6</h2>
+            <p>Your content goes here.</p>
+            <div class="overlay">Text below Section 6</div>
+        </article>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Food Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
